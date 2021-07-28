@@ -36,7 +36,7 @@ function checkOS() {
 		source /etc/os-release
 		OS="${ID}" # debian or ubuntu
 		if [[ ${ID} == "debian" || ${ID} == "raspbian" ]]; then
-			if [[ ${VERSION_ID} -ne 10 ]]; then
+			if [[ ${VERSION_ID} -ne 11 ]]; then
 				echo "Your version of Debian (${VERSION_ID}) is not supported. Please use Debian 10 Buster"
 				exit 1
 			fi
